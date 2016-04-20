@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/mortgageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="贷款总额（万元）："
+        android:textSize="18sp"
+        android:textColor="#556677"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/mortgageEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60"
+        android:inputType="number"
+        android:textSize="18sp"
+        android:textColor="#556677"
+        android:background="#cfcece"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_toRightOf="@+id/mortgageTextView"
+        android:layout_alignBottom="@+id/mortgageTextView"/>
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="贷款时间（年）："
+        android:textSize="18sp"
+        android:textColor="#556677"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/mortgageTextView"/>
+
+    <EditText
+        android:id="@+id/timeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30"
+        android:inputType="number"
+        android:textSize="18sp"
+        android:textColor="#556677"
+        android:background="#cfcece"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_toRightOf="@+id/timeTextView"
+        android:layout_alignBottom="@+id/timeTextView"
+        android:layout_alignRight="@+id/mortgageEditText"/>
+
+    <TextView
+        android:id="@+id/interestTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="贷款利率（%）："
+        android:textSize="18sp"
+        android:textColor="#556677"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/timeTextView"/>
+
+    <EditText
+        android:id="@+id/interestEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.165"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:textColor="#556677"
+        android:background="#cfcece"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_toRightOf="@+id/interestTextView"
+        android:layout_alignBottom="@+id/interestTextView"
+        android:layout_alignRight="@+id/mortgageEditText"/>
+
+    <TextView
+        android:id="@+id/aheadTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第几年还完："
+        android:textSize="18sp"
+        android:textColor="#556677"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/interestTextView"/>
+
+    <EditText
+        android:id="@+id/aheadTimeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:inputType="number"
+        android:textSize="18sp"
+        android:textColor="#556677"
+        android:background="#cfcece"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_toRightOf="@+id/aheadTimeTextView"
+        android:layout_alignBottom="@+id/aheadTimeTextView"
+        android:layout_alignRight="@+id/mortgageEditText"/>
+
+    <Button
+        android:id="@+id/calButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="计算"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/aheadTimeEditText"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
