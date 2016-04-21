@@ -8,10 +8,10 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    String mortgage;
-    String rate;
-    String time;
-    String aheadTime;
+    String mortgage;        //贷款金额（万元）
+    String rate;            //贷款年利率（%）
+    String time;            //贷款时间（年）
+    String aheadTime;       //第几年全部还款
 
     EditText mortgageEdit;
     EditText timeEdit;
