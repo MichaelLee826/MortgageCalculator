@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ViewPager_CapitalInterestCombination_LoanSum_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="贷款总额:"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/ViewPager_CapitalInterestCombination_LoanSum_Number_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/ViewPager_CapitalInterestCombination_CommPaySum_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商业还款:"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/ViewPager_CapitalInterestCombination_LoanSum_TextView"/>
+
+            <TextView
+                android:id="@+id/ViewPager_CapitalInterestCombination_CommPaySum_Number_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ViewPager_CapitalInterestCombination_LoanSum_Number_TextView"/>
+
+            <TextView
+                android:id="@+id/ViewPager_CapitalInterestCombination_HAFPaySum_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公积金还款:"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/ViewPager_CapitalInterestCombination_CommPaySum_TextView"/>
+
+            <TextView
+                android:id="@+id/ViewPager_CapitalInterestCombination_HAFPaySum_Number_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ViewPager_CapitalInterestCombination_CommPaySum_Number_TextView"/>
+
+            <TextView
+                android:id="@+id/ViewPager_CapitalInterestCombination_PaySum_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="还款总额:"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/ViewPager_CapitalInterestCombination_HAFPaySum_TextView"/>
+
+            <TextView
+                android:id="@+id/ViewPager_CapitalInterestCombination_PaySum_Number_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ViewPager_CapitalInterestCombination_HAFPaySum_Number_TextView"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ViewPager_CapitalInterestCombination_Month_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="贷款月数:"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/ViewPager_CapitalInterestCombination_Month_Number_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/ViewPager_CapitalInterestCombination_CommInterest_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商业利息:"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/ViewPager_CapitalInterestCombination_Month_TextView"/>
+
+            <TextView
+                android:id="@+id/ViewPager_CapitalInterestCombination_CommInterest_Number_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ViewPager_CapitalInterestCombination_Month_Number_TextView"/>
+
+            <TextView
+                android:id="@+id/ViewPager_CapitalInterestCombination_HAFInterest_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公积金利息:"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/ViewPager_CapitalInterestCombination_CommInterest_TextView"/>
+
+            <TextView
+                android:id="@+id/ViewPager_CapitalInterestCombination_HAFInterest_Number_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ViewPager_CapitalInterestCombination_CommInterest_Number_TextView"/>
+
+            <TextView
+                android:id="@+id/ViewPager_CapitalInterestCombination_Interest_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="利息总额:"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/ViewPager_CapitalInterestCombination_HAFInterest_TextView"/>
+
+            <TextView
+                android:id="@+id/ViewPager_CapitalInterestCombination_Interest_Number_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ViewPager_CapitalInterestCombination_HAFInterest_Number_TextView"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:src="@drawable/cursor"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="期数"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="偿还本金"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="偿还利息"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="月供"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:src="@drawable/cursor"
+        android:scaleType="fitXY"
+        android:layout_marginTop="2dp" />
+
+    <michaellee.mortgagecalculator.MyListView
+        android:id="@+id/CapitalInterestCombination_ListOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </michaellee.mortgagecalculator.MyListView>
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity_Main"
+    android:background="#ffffff"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/CommercialLoanTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="商业贷款"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/HAFTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="公积金贷款"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/CombinationTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="组合贷款"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cursorImageView"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cursor"
+        android:scaleType="matrix"
+        android:layout_below="@+id/layout" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/cursorImageView"
+        android:layout_above="@+id/buttons_Layout">
+    </android.support.v4.view.ViewPager>
+
+    <!--<LinearLayout
+        android:id="@+id/ll_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_above="@+id/buttons_Layout">
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/buttons_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="重置"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:padding="15dp"
+            android:layout_weight="0.5"/>
+
+        <Button
+            android:id="@+id/calculationButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="开始计算"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:padding="15dp"
+            android:layout_weight="1.5"/>
+    </LinearLayout>
+</RelativeLayout>

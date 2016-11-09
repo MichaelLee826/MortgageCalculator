@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/Result_Combination_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Result_Combination_TypeOne_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="等额本息"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/Result_Combination_TypeTwo_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="等额本金"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/Result_Combination_Cursor_ImageView"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cursor"
+        android:scaleType="matrix"
+        android:layout_below="@+id/Result_Combination_Layout" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/Result_Combination_Viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/Result_Combination_Layout">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/ll_banner2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/combination_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="25dp"
+        android:paddingBottom="30dp"
+        fab:menu_fab_size="normal"
+        fab:menu_showShadow="true"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_colorNormal="#3F51B5"
+        fab:menu_colorPressed="#5866b1"
+        fab:menu_colorRipple="#99FFFFFF"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_buttonSpacing="5dp"
+        fab:menu_labels_margin="5dp"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_colorNormal="#ffffff"
+        fab:menu_labels_colorPressed="#ffffff"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_style="@style/MenuLabelsStyle"
+        fab:menu_labels_position="left"
+        fab:menu_openDirection="up"
+        fab:menu_backgroundColor="@color/white_transparent">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/combination_menu_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bt_share_wechat"
+            android:scaleType="fitCenter"
+            style="@style/MenuButtonsStyle"
+            fab:fab_label="将结果发送给微信好友" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/combination_menu_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bt_share_wechat_circle"
+            android:scaleType="fitCenter"
+            style="@style/MenuButtonsStyle"
+            fab:fab_label="将结果分享到微信朋友圈" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/combination_menu_item3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bt_ad"
+            style="@style/MenuButtonsStyle"
+            android:scaleType="fitCenter"
+            fab:fab_label="看个广告支持一下" />
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>
