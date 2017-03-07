@@ -1,10 +1,10 @@
 # MortgageCalculator
 房贷计算器 for Android
 
-![image](https://github.com/MichaelLee826/MortgageCalculator/blob/master/screenshots/1.png)
-![image](https://github.com/MichaelLee826/MortgageCalculator/blob/master/screenshots/2.jpg)
-![image](https://github.com/MichaelLee826/MortgageCalculator/blob/master/screenshots/3.jpg)
-![image](https://github.com/MichaelLee826/MortgageCalculator/blob/master/screenshots/4.jpg)
+![image](https://github.com/MichaelLee826/MortgageCalculator/blob/master/Screenshots/1.png)
+![image](https://github.com/MichaelLee826/MortgageCalculator/blob/master/Screenshots/2.jpg)
+![image](https://github.com/MichaelLee826/MortgageCalculator/blob/master/Screenshots/3.jpg)
+![image](https://github.com/MichaelLee826/MortgageCalculator/blob/master/Screenshots/4.jpg)
 
 V1：可以计算等额本息和等额本金两种方式的每期还款金额，还可以计算提前N年还款的相关数据。
 
